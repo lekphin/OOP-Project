@@ -3,6 +3,6 @@
     "noImplicitAny": true,
     "outDir": "dist",
   },
-  "include": ["src//*", "src/Airport.ts"],
+  "include": ["src//*", "src/airport/Airport.ts", "src/Passenger/Passengers.ts"],
   "exclude": ["node_modules", "/*.spec.ts"]
 }

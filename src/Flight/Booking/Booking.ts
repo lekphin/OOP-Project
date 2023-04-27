@@ -1,4 +1,4 @@
-import { Passenger } from "../Passengers";
+import { Passenger } from "../../Passenger/Passengers";
 
 export class Booking{
     public bookingNumber: number;

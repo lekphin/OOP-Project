@@ -1,7 +1,7 @@
-import { Airport } from "./Airport";
+import { Airport } from "./airport/Airport";
 import { Flight } from "./Flight/Flight";
 import { Booking } from "./Flight/Booking/Booking";
-import { Passenger } from "./Flight/Passengers";
+import { Passenger } from "./Passenger/Passengers";
 
 let airport = new Airport("Angkor-Air", "Phnom Penh");
 

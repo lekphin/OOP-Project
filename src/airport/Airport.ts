@@ -1,4 +1,4 @@
-import { Booking } from "./Flight/Booking/Booking";
+import { Booking } from "../Flight/Booking/Booking";
 export class Airport{
     public booking: Booking[] = []
     constructor(
