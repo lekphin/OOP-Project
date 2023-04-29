@@ -17,6 +17,4 @@ export class Airport{
     addFlight(flight: Flight){
         this.flight.push(flight);
     };
-
-    
 }

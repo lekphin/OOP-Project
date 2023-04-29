@@ -1,4 +1,4 @@
-import{Pilot} from '../human/Pilot'
+import{Pilot} from '../Human/Pilot'
 export class Flight {
     pilot:Pilot[]=[];
     constructor(

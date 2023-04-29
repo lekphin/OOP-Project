@@ -1,4 +1,4 @@
-import { Airport } from "./airport/Airport";
+import { Airport } from "./Airport/Airport";
 import { Flight } from "./Flight/Flight";
 import { Booking } from "./Flight/Booking/Booking";
 import { Passenger } from "./Passenger/Passengers";
@@ -21,5 +21,7 @@ airport.addBooking(booking1);
 airport.addFlight(fligh1);
 
 // console.log(airport);
+console.log(airport);
+
 console.log(booking1.getMeal());
 

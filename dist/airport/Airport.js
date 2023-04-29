@@ -13,9 +13,11 @@ var Airport = /** @class */ (function () {
     Airport.prototype.addBooking = function (booking) {
         this.booking.push(booking);
     };
+    ;
     Airport.prototype.addFlight = function (flight) {
         this.flight.push(flight);
     };
+    ;
     return Airport;
 }());
 exports.Airport = Airport;
