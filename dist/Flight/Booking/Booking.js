@@ -1,17 +1,27 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.Booking = void 0;
+var Tickets;
+(function (Tickets) {
+    Tickets[Tickets["ONEWAYSTICKET"] = 0] = "ONEWAYSTICKET";
+    Tickets[Tickets["RETURNTICKET"] = 1] = "RETURNTICKET";
+})(Tickets || (Tickets = {}));
 var Booking = /** @class */ (function () {
-    function Booking(customer, bookingNumber) {
-        this.customer = [];
+    function Booking(passenger, bookingNumber, ticket) {
+        this.passenger = passenger;
+        this.bookingNumber = bookingNumber;
+        this.ticket = ticket;
         this.meals = [];
         this.bookingNumber = bookingNumber;
     }
     ;
     Booking.prototype.addPassenger = function (passenger) {
-        this.customer.push(passenger);
+        this.passenger.push(passenger);
     };
     ;
+    Booking.prototype.getPassenger = function () {
+        return this.passenger;
+    };
     Booking.prototype.addMeal = function (meal) {
         this.meals.push(meal);
     };
@@ -24,6 +34,10 @@ var Booking = /** @class */ (function () {
         ;
         return listAllMeal;
     };
+    Booking.prototype.getTicket = function () {
+        return this.ticket;
+    };
     return Booking;
 }());
 exports.Booking = Booking;
+;

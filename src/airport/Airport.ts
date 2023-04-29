@@ -1,10 +1,12 @@
 import { Employee } from "../Employee/Employee";
 import { Booking } from "../flight/booking/Booking";
 import { Flight } from "../flight/Flight";
+import { Airline } from "../airline/Airline";
 export class Airport{
-    flight: Flight[] = [];
-    booking: Booking[] = [];
-    employees:Employee[] = [];
+    public flight: Flight[] = [];
+    public booking: Booking[] = [];
+    public airline: Airline[] = [];
+    employees: any;
     constructor(
         public airportName: string,
         public airportCity: string,
@@ -21,5 +23,8 @@ export class Airport{
     };
     addEmployee(employee:Employee){
         this.employees.push(employee)
+    }
+    addAirline(airline: Airline){
+        this.airline.push(airline);
     }
 }

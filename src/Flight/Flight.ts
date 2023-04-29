@@ -9,6 +9,7 @@ export class Flight {
         public flightID: number,
         public price: number,
         public departure: string,
+        public destination: string,
         public date:string,
         public startTime:string,
         public endTime:string,
@@ -44,6 +45,6 @@ export class Flight {
     getSalaryOfAllemployees(){
         let salaryOfEmployees = 0;
         salaryOfEmployees = this.getSalaryOfPilot() + this.getSalaryOfAttendant()
-        return salaryOfEmployees
+        return salaryOfEmployees;
     };
 }

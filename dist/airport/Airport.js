@@ -7,6 +7,7 @@ var Airport = /** @class */ (function () {
         this.airportCity = airportCity;
         this.flight = [];
         this.booking = [];
+        this.airline = [];
         this.airportCity = airportCity;
         this.airportName = airportName;
     }
@@ -18,6 +19,9 @@ var Airport = /** @class */ (function () {
         this.flight.push(flight);
     };
     ;
+    Airport.prototype.addAirline = function (airline) {
+        this.airline.push(airline);
+    };
     return Airport;
 }());
 exports.Airport = Airport;
