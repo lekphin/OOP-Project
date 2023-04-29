@@ -1,13 +1,13 @@
-import { Employee } from "../Employee/Employee";
+import { Employee, Gender } from "../Employee/Employee";
 export class Pilot extends Employee{
     constructor(
         firstName: string,
         lastName: string,
-       public salary: number,
+        salary: number,
+        gender:Gender,
        public position: string,
        public bornDate: string,
-       public employeeNumber: number,
     ){
-        super(firstName, lastName)
+        super(firstName, lastName,salary,gender)
     }
 }

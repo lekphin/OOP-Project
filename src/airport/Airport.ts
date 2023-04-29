@@ -1,8 +1,10 @@
-import { Booking } from "../Flight/Booking/Booking";
-import { Flight } from "../Flight/Flight";
+import { Employee } from "../Employee/Employee";
+import { Booking } from "../flight/booking/Booking";
+import { Flight } from "../flight/Flight";
 export class Airport{
-    public flight: Flight[] = [];
-    public booking: Booking[] = [];
+    flight: Flight[] = [];
+    booking: Booking[] = [];
+    employees:Employee[] = [];
     constructor(
         public airportName: string,
         public airportCity: string,
@@ -17,4 +19,7 @@ export class Airport{
     addFlight(flight: Flight){
         this.flight.push(flight);
     };
+    addEmployee(employee:Employee){
+        this.employees.push(employee)
+    }
 }
