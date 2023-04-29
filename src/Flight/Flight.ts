@@ -4,8 +4,9 @@ export class Flight{
         private flightID: number,
         private price: number,
         private departure: string,
+        private destination: string,
         private date: string,
-        private startTime: number,
-        private endTime: number
+        private startTime: string,
+        private endTime: string
     ){}
 }
