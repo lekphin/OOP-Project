@@ -10,13 +10,13 @@ export class Airport{
         this.airportCity = airportCity;
         this.airportName = airportName;
     } 
-
-
     addBooking(booking: Booking){
         this.booking.push(booking);
-    }
+    };
 
     addFlight(flight: Flight){
         this.flight.push(flight);
-    }
+    };
+
+    
 }

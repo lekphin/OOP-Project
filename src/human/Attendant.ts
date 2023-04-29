@@ -1,13 +1,14 @@
-import { Employee } from "./employee/Employee";
+import { Employee } from "../employee/Employee";
 export class Attendant extends Employee{
     constructor(
         firstName: string,
         lastName: string,
-        private salary: number,
-        private position: string,
-        private bornDate: string,
-        private employeeNumber: number
+        public salary: number,
+        public position: string,
+        public bornDate: string,
+        public employeeNumber: number
     ){
         super(firstName, lastName);
-    }
+    };
+
 }
