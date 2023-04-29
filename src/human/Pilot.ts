@@ -1,4 +1,4 @@
-import { Employee } from "../Employee/Employee";
+import { Employee } from "../employee/Employee";
 export class Pilot extends Employee{
     constructor(
         firstName: string,

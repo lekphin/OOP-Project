@@ -1,3 +1,8 @@
+import { Employee } from "../employee/Employee";
+
 export class Airplance{
-    constructor(public airplanceName:string){}
+    public employee: Employee[];
+    constructor(
+        public airplanceName:string,
+    ){}
 }

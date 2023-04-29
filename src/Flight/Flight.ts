@@ -1,12 +1,12 @@
-import{Pilot} from '../Human/Pilot'
+import{Pilot} from '../human/Pilot'
 export class Flight {
-    pilot:Pilot[]=[];
+    public pilot:Pilot[]=[];
     constructor(
-       
         public flightName: string,
         public flightID: number,
         public price: string,
         public departure: string,
+        public destination: string,
         public date:string,
         public startTime:string,
         public endTime:string,
@@ -19,7 +19,8 @@ export class Flight {
         this.startTime = startTime,
         this.endTime = endTime
     };
-    // getFlights(pilot:Pilot,date:Date){
 
-    // }
+    addPilot(pilot: Pilot){
+        this.pilot.push(pilot);
+    }
 }
